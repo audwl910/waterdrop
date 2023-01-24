@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mainpage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/bar"
+                android:layout_width="23.7dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/list_icon" />
+
+
+            <TextView
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="85dp"
+                android:text="Water Drop"
+                android:textColor="#627bfc"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/cal"
+                android:layout_width="23.7dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/record_bar" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="5dp"
+
+                android:textColor="#606060"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="@tools:sample/date/ddmmyy" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" &lt;"
+                    android:textColor="#606060"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+
+                    android:text="오늘 "
+                    android:textColor="#606060"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="물 "
+                    android:textColor="#6ab2de"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="섭취량 : "
+                    android:textColor="#606060"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/water_intake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="0 ml"
+                    android:textColor="#75e6fe"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" &gt;"
+                    android:textColor="#606060"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="목표 섭취량 :  "
+                    android:textColor="#606060"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/target_intake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="2000ml"
+                    android:textColor="#75e6fe"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="148.9dp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="46dp"
+                android:src="@drawable/left_btn" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/basic_bg"
+                    android:layout_width="179dp"
+                    android:layout_height="179dp"
+                    android:src="@drawable/water_basic" />
+
+
+                <ImageView
+                    android:id="@+id/full_bg"
+                    android:layout_width="179dp"
+                    android:layout_height="179dp"
+                    android:src="@drawable/water_full" />
+
+                <ImageView
+                    android:id="@+id/eighty_bg"
+                    android:layout_width="179dp"
+                    android:layout_height="140dp"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/water_80" />
+
+                <ImageView
+                    android:id="@+id/sixty_bg"
+                    android:layout_width="179dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/water_60" />
+
+                <ImageView
+                    android:id="@+id/fourty_bg"
+                    android:layout_width="179dp"
+                    android:layout_height="95dp"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/water_40"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/twenty_bg"
+                    android:layout_width="179dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom"
+                    android:src="@drawable/water_20"
+
+                    />
+
+                //꽃 이미지
+
+                <ImageView
+                    android:id="@+id/flower_1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="bottom|center"
+                    android:src="@drawable/stage1" />
+
+                <ImageView
+                    android:id="@+id/flower_2"
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="35dp"
+                    android:src="@drawable/stage2" />
+
+                <ImageView
+                    android:id="@+id/flower_3"
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="35dp"
+                    android:src="@drawable/stage3" />
+
+                <ImageView
+                    android:id="@+id/flower_4"
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="35dp"
+                    android:src="@drawable/stage4" />
+
+                <ImageView
+                    android:id="@+id/flower_5"
+                    android:layout_width="100dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="35dp"
+                    android:src="@drawable/stage5" />
+
+
+            </FrameLayout>
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="148.9dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="46dp"
+                android:src="@drawable/right_btn" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:padding="18dp">
+
+            <ImageButton
+                android:id="@+id/btn_exclamation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:background="#ffffff"
+                android:src="@drawable/exclamation_mark" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/amount_of_water"
+                android:layout_width="310.3dp"
+                android:layout_height="44.3dp"
+                android:layout_centerHorizontal="true"
+                android:background="#dde9f7">
+
+                <TextView
+                    android:id="@+id/btn_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/text_ml"
+                    android:text="+"
+                    android:textSize="20dp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/text_ml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="20dp"
+                    android:text="100ml"
+                    android:textColor="#606060"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/btn_minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/text_ml"
+                    android:text="-"
+                    android:textSize="30dp"
+
+
+                    />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="310.3dp"
+                android:layout_height="143.2dp"
+                android:layout_below="@id/amount_of_water"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:background="#f6f7fc"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="282dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="* 물 많이 마시기"
+                    android:textColor="#6ab2de"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="282dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+
+                        android:text="* 목표 섭취량까지"
+                        android:textColor="#6ab2de"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/water_recommended_intake"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2L "
+                        android:textColor="#6ab2de"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="남음"
+                        android:textColor="#6ab2de"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

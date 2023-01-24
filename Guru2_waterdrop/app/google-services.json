@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "738397333894",
+    "firebase_url": "https://project-6a2a7.firebaseio.com",
+    "project_id": "project-6a2a7",
+    "storage_bucket": "project-6a2a7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738397333894:android:9176a175e660200ef92407",
+        "android_client_info": {
+          "package_name": "com.guru2_18.guru2_waterdrop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "738397333894-mjvbdljq3e3cl8gieaha19g7d3lso1g7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHryiLssArQuhU2M-g97Gs18IpF8NdZaw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "738397333894-mjvbdljq3e3cl8gieaha19g7d3lso1g7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

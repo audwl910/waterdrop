@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Exclamation"
+    android:background="#B2BDF6">
+
+
+    <ImageButton
+        android:id="@+id/close_btn"
+        android:layout_height="39dp"
+        android:layout_width="39dp"
+        android:layout_gravity="right"
+        android:padding="10dp"
+        android:src="@drawable/close_icon"
+        android:scaleType="centerInside"
+        android:background="#B2BDF6"
+        />
+
+
+    <ImageView
+        android:padding="10dp"
+        android:layout_width="350dp"
+        android:layout_height="272dp"
+        android:src="@drawable/state"
+        android:background="#B2BDF6"
+        />
+
+
+</LinearLayout>
